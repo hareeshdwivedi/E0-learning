@@ -1,0 +1,78 @@
+.container
+{
+    position: relative;
+    background-color: gray;
+    height:fit-content;
+  
+}
+
+.btn
+{
+    margin-left:90% ;
+}
+
+.logo{
+    position: relative;
+    height: 50px;
+    aspect-ratio: 128/28;
+    
+}
+
+.bgImage{
+    position: relative;
+    display: flex;
+    margin: 2em;
+    min-height: 30vh;
+    aspect-ratio: 16/9;
+    flex-grow: 1;
+}
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    font-size: large;
+    
+}
+
+.footer{
+    background-color:rgb(104, 93, 93);
+    color:white;
+    /* text-shadow: 2px 2px 2px white; */
+    color:white;
+    height:fit-content;
+ }
+ .par{
+    display:grid;
+    grid-template-columns:6fr 6fr ;
+ }
+ .list{
+    display:block;
+ }
+ .list2 a{
+    text-decoration:none;
+    color:black;
+    margin-bottom:2px;
+ }
+ .list2 a:hover{
+    text-decoration:underline;
+}
+
+.list1{
+    float: right;
+   color:white;
+    margin-right:100px;
+}
+.list12
+{
+    text-decoration:none;
+    color: white;
+    
+}
+.list2 a:hover{
+    text-decoration:underline;
+    color:white;
+}

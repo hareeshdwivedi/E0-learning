@@ -1,0 +1,252 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.navcontainer{
+    position: fixed;
+    width:200px;
+    height:100%;
+    background-color: rgb(255, 115, 0);
+    box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+ }
+ /* .navcontainer{
+    position: fixed;
+    width:200px;
+    height:100%;
+    background-color: rgb(255, 115, 0);
+    box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+ } */
+
+ .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+
+ .filemgmt{
+    width: 100%;
+ }
+
+ .heading{
+    margin-left: 3em;
+ }
+
+ .section{
+    padding: 0 50px;
+    flex-grow: 1;
+ }
+
+ .data{
+    width: 100%;
+ }
+ 
+ .content{
+    display: flex;
+    margin-left: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .wrapper{
+     padding:10px;
+     z-index: 1;
+ }
+ .logo{
+    padding:10px;
+    padding-left: 20px;
+    text-align:left;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.wrapper >ul{
+    margin-top:20px;
+     text-align: left;
+     padding-left: 10px;
+     display: flex;
+     gap:25px;
+     flex-direction: column;
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+.wrapper>ul>li{
+    list-style: none;
+    color: rgb(65, 65, 65);
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.wrapper>ul>li:active{
+    color: #000;
+}
+
+.wrapper>ul>li>a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+.navcontainer{
+    width: 70px;
+}
+.logo>h2{
+    opacity: 0;
+}
+.logo{
+    
+    width: 40px;
+    height: 40px;
+    padding:10px;
+    margin: 10px;
+}
+.wrapper>ul{
+    gap:5px;
+}
+.wrapper>ul>li:hover{
+  color:red;
+}
+.wrapper>ul>li>a{
+    opacity: 0;
+}
+ }
+
+/*headercss*/
+
+.headcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    height:70px;
+    background-color: rgb(255, 255, 255);
+    margin-left:200px;
+    /* z-index: -1; */
+   
+}
+.headwrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title{
+    margin-left: 40px;
+}
+.title>h2{
+    color: rgb(0, 0, 0);;
+}
+.title>p{
+    color: rgb(0, 0, 0);;
+}
+.title>h2>span{
+    color:rgb(9, 112, 72);
+}
+.profile{
+    position: absolute;
+    right:20px;
+}
+.image{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .headcontainer{
+        width: 100%;
+        margin-left: 70px;
+    }
+    .profile{
+        position: absolute;
+        right:0px;
+    }
+  
+}
+
+.contentcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left:200px;
+}
+
+.assignmentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.table1{
+    width: 100%;
+    border: #000 1px solid;
+}
+
+.contentwrapper{
+    display: flex;
+    padding: 20px;
+    gap:40px;
+}
+.tabs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:250px;
+    height:50vh;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+}
+
+.categories{
+    padding: 10%;
+}
+
+.categories>h2{
+    color: rgb(0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .contentcontainer{
+        margin-left: 70px;
+       
+    }
+    .contentwrapper{
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+    .tabs{
+        width: 350px;
+    }
+
+}
+
+.links{
+    color: blue;
+}
